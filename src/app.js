@@ -71,7 +71,7 @@ app.get('/weather',(req, res)=>{
     }
     //console.log('Data',data.Latitude);
 
-    forecasts(Latitude,Longitude,(error,{weather_descriptions,temperature,feelslike,url}={})=>{
+    forecasts(Latitude,Longitude,(error,{weather_descriptions,temperature,feelslike,is_day,url}={})=>{
       //const {weather_descriptions,temperature,feelslike} = forecastData;
       if(error){
         return res.send({
@@ -86,6 +86,7 @@ app.get('/weather',(req, res)=>{
        weather_descriptions: weather_descriptions,
        feelslike:feelslike,
        temperature:temperature,
+       is_day:is_day,
        url:url
       });
     });

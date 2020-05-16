@@ -30,7 +30,7 @@ weatherForm.addEventListener('submit',(e)=>{
         //console.log(data.error);
       }
       else{
-        messageOne.textContent = data.location+".\nWeather description:"+data.weather_descriptions+"\n FeelsLike:"+data.feelslike+"\n Temparature:"+data.temperature;
+        messageOne.textContent = data.location+".\nWeather description:"+data.weather_descriptions+"\n FeelsLike:"+data.feelslike+"\n Temparature:"+data.temperature+"\n is_day:"+data.is_day;
         messageTwo.textContent = "";
         /*console.log(data.location);
         console.log(data.weather_descriptions);

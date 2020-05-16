@@ -20,6 +20,7 @@ const forecasts = (latitude,longitude,callback)=>{
           'weather_descriptions':body.current.weather_descriptions['0'],
           'temperature':body.current.temperature,
           'feelslike':body.current.feelslike,
+          'is_day':body.current.is_day,
           url
         });
       }
